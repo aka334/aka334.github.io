@@ -5,6 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Facebook</title>
     <link
+      href="./fontawesome-free-6.2.0-web/css/fontawesome.css"
+      rel="stylesheet"
+    />
+    <link href="./fontawesome-free-6.2.0-web/css/brands.css" rel="stylesheet" />
+    <link href="./fontawesome-free-6.2.0-web/css/solid.css" rel="stylesheet" />
+    <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
@@ -13,7 +19,164 @@
     <link href="style.css" rel="stylesheet" />
   </head>
   <body>
-    <h1>Hello, world!</h1>
+    <header>
+      <nav class="navbar navbar-light bg-light">
+        <a class="navbar-brand" href="#">
+          <img
+            src="https://static.xx.fbcdn.net/rsrc.php/y8/r/dF5SId3UHWd.svg"
+            width="100"
+            alt=""
+          />
+        </a>
+        <div class="my-lg-2">
+          <!-- Search Icon -->
+          <button class="btn">
+            <i class="fa-sharp fa-solid fa-magnifying-glass"></i>
+          </button>
+          <!-- Messenger Icon -->
+          <button class="btn">
+            <i class="fa-brands fa-facebook-messenger"></i>
+          </button>
+        </div>
+      </nav>
+      <!-- Image and text -->
+      <div class="input-group mb-3">
+        <!-- <div class="input-group-prepend"> -->
+          <img src = "./img/profile.jpg" height="55px" width="55px">
+        <!-- </div> -->
+        <input type="text" class="form-control" placeholder="What on your mind?" />
+        <div class="album">
+          <i class="fa-solid fa-image" ></i>
+            </div>
+      </div>
+      <nav class="navbar fixed-bottom navbar-light bg-light">
+          <div class="col-2">
+            <i class="fa-solid fa-house"></i><h6 class="bot-menu">Home</h6>
+          </div>
+          <div class="col-2">
+            <i class="fa-regular fa-tv"></i><h6 class="bot-menu">Watch</h6>
+          </div>
+          <div class="col-2">
+            <i class="fa-regular fa-heart"></i><h6 class="bot-menu">Dating</h6>
+          </div>
+          <div class="col-2">
+            <i class="fa-regular fa-calendar"></i><h6 class="bot-menu">Feeds</h6>
+          </div>
+          <div class="col-2">
+            <i class="fa-solid fa-bell"></i><h6 class="bot-menu">Notifications</h6>
+          </div>
+          <div class="col-2">
+            <i class="fa-regular fa-bars"></i><h6 class="bot-menu">Menu</h6>
+          </div>
+        </div>
+      </nav>
+    </header>
+    
+    <div class="container mt-12 mb-12">
+      <div class="row d-flex align-items-center justify-content-center">
+          <div class="col-md-6 card-design">
+              <div class="card">
+                  <div class="d-flex justify-content-between p-2 px-3">
+                      <div class="d-flex flex-row align-items-center"> <img src="./img/profile.jpg" width="50" class="rounded-circle">
+                          <div class="d-flex flex-column ml-2"> <span class="font-weight-bold">Elon Musk</span> <small class="text-primary">Collegues</small> </div>
+                      </div>
+                      
+                  </div> <img src="./img/img1.jpg" class="img-fluid">
+                  <div class="p-2">
+                      <p class="text-justify">Don't let picture define you, </p>
+                      <hr>
+                      <div class="d-flex justify-content-between align-items-center">
+                          <div class="d-flex flex-row icons d-flex align-items-center"> <i class="fa fa-heart"></i> <i class="fa fa-smile-o ml-2"></i> </div>
+                          <div class="d-flex flex-row muted-color"> <span>2 comments</span>  </div>
+                      </div>
+                      <hr>
+                      <nav class="navbar comment-section">
+                        <div class="col-4">
+                          <i class="fa-solid fa-thumbs-up"></i> Like
+                        </div>
+                        <div class="col-4">
+                          <i class="fa-solid fa-comment"></i> Comment
+                        </div>
+                        <div class="col-4">
+                          <i class="fa-solid fa-share-from-square"></i> Share</h6>
+                        </div>
+                      </nav>
+                
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+  <div class="container mt-12 mb-12">
+    <div class="row d-flex align-items-center justify-content-center">
+        <div class="col-md-6 card-design">
+            <div class="card">
+                <div class="d-flex justify-content-between p-2 px-3">
+                    <div class="d-flex flex-row align-items-center"> <img src="./img/profile.jpg" width="50" class="rounded-circle">
+                        <div class="d-flex flex-column ml-2"> <span class="font-weight-bold">Elon Musk</span> <small class="text-primary">Collegues</small> </div>
+                    </div>
+                    
+                </div> <img src="./img/img1.jpg" class="img-fluid">
+                <div class="p-2">
+                    <p class="text-justify">Don't let picture define you, </p>
+                    <hr>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div class="d-flex flex-row icons d-flex align-items-center"> <i class="fa fa-heart"></i> <i class="fa fa-smile-o ml-2"></i> </div>
+                        <div class="d-flex flex-row muted-color"> <span>2 comments</span>  </div>
+                    </div>
+                    <hr>
+                    <nav class="navbar comment-section">
+                      <div class="col-4">
+                        <i class="fa-solid fa-thumbs-up"></i> Like
+                      </div>
+                      <div class="col-4">
+                        <i class="fa-solid fa-comment"></i> Comment
+                      </div>
+                      <div class="col-4">
+                        <i class="fa-solid fa-share-from-square"></i> Share</h6>
+                      </div>
+                    </nav>
+              
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container mt-12 mb-12">
+  <div class="row d-flex align-items-center justify-content-center">
+      <div class="col-md-6 card-design">
+          <div class="card">
+              <div class="d-flex justify-content-between p-2 px-3">
+                  <div class="d-flex flex-row align-items-center"> <img src="./img/profile.jpg" width="50" class="rounded-circle">
+                      <div class="d-flex flex-column ml-2"> <span class="font-weight-bold">Elon Musk</span> <small class="text-primary">Collegues</small> </div>
+                  </div>
+                  
+              </div> <img src="./img/img1.jpg" class="img-fluid">
+              <div class="p-2">
+                  <p class="text-justify">Don't let picture define you, </p>
+                  <hr>
+                  <div class="d-flex justify-content-between align-items-center">
+                      <div class="d-flex flex-row icons d-flex align-items-center"> <i class="fa fa-heart"></i> <i class="fa fa-smile-o ml-2"></i> </div>
+                      <div class="d-flex flex-row muted-color"> <span>2 comments</span>  </div>
+                  </div>
+                  <hr>
+                  <nav class="navbar comment-section">
+                    <div class="col-4">
+                      <i class="fa-solid fa-thumbs-up"></i> Like
+                    </div>
+                    <div class="col-4">
+                      <i class="fa-solid fa-comment"></i> Comment
+                    </div>
+                    <div class="col-4">
+                      <i class="fa-solid fa-share-from-square"></i> Share</h6>
+                    </div>
+                  </nav>
+            
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
