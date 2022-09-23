@@ -6,18 +6,19 @@
   border-bottom: 0.5px solid rgb(116, 120, 224);
 }
 
-.btn {
+.btn_high {
   width: 10px;
-  height: 30px;
+  height: 35px;
   padding: 0px 22px 0px 9px;
-  border-radius: 60px;
+  /* border-radius: 60px; */
   font-size: 15px;
   text-align: center;
-  background-color: #4139391a;
+  background-color: #0000001a;
+  border: none;
 }
 
 .form-control {
-  border: 0px solid #ced4da;
+  border: 0px solid #076acc;
 }
 
 .album {
@@ -145,4 +146,11 @@ hr {
 
 .card-design {
   padding-top: 10px;
+}
+.status{
+  padding-left:  10px;
+
+}
+.text-bot{
+  font-size: 10px;
 }
