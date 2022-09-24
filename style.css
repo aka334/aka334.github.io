@@ -154,3 +154,65 @@ hr {
 .text-bot{
   font-size: 10px;
 }
+.padd-para{
+  padding-left:20px;
+}
+.modal-dialog{
+   position:fixed;
+   top:auto;
+   right:auto;
+   left:auto;
+   bottom:0;
+}
+.likeclass{
+  text-align: center;
+  font-size: 30px;
+  padding-top: 10px;
+}
+.liketitle{
+  text-align: center;
+  font-size: 30px;
+}
+.likebody{
+  font-size: 14px;
+  text-align: center;
+  padding: 12px 0px 10px 1px;
+}
+.likebutton1{
+  max-width: 100%;
+  margin: 10px auto;
+  width: 350px;
+  height: 45px;
+  font-size: 18px;
+  background-color: #4267B2;
+  border: none;
+  border-radius: 5px;
+}
+.likebutton2{
+  max-width: 100%;
+  margin: 10px auto;
+  width: 350px;
+  height: 45px;
+  font-size: 18px;
+  background-color: rgb(244, 234, 234);
+  border: none;
+  border-radius: 5px;
+}
+.sharetitle{
+  text-align: center;
+  font-size: 20px;
+}
+.sharebody{
+  font-size: 14px;
+  text-align: center;
+  padding: 12px 0px 10px 1px;
+  /* background-color: #a09c9c; */
+}
+.emotionSection{
+  border: none;
+  max-width: 100%;
+  width: 100%;
+  background-color: none;
+  padding: 0px;
+  font-size: 18px;
+}
