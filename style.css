@@ -235,3 +235,8 @@ hr {
 .para-op{
   font-size: 10px;
 }
+.btn_card{
+  border: none;
+  background-color: #ffffff;
+  align-items: center;
+}
