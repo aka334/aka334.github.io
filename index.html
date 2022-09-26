@@ -76,6 +76,44 @@
       </div>
     </div>
   </div>
+  <!-- Independent Fact Check label -->
+  <div class="modal fade" id="FactModal" tabindex="-1" aria-labelledby="myModal" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-body">
+          <i class="social_icons fa-solid fa-circle-info"></i>
+          <div class="fact_para">Facebook determined your post has the same false information and added a notice to this
+            post</div>
+          <i class="social_icons fa-brands fa-facebook"></i>
+          <div class="fact_para">People who repeatedly share false information might have their posts moved lowe in News
+            Feed so other people are less likely to see them.</div>
+        </div>
+        <div class="modal-body">
+          <h6><b>From Independent Fact Checkers</b></h6>
+          <div class="card shadow">
+            <div class="card-body">
+              <button type="button" class="btn btn-info rounded-circle" style="font-size:12px; ">A</button>
+              <p class="card-text">This image is NOT testing viewers' stress level but i just an optical illusion.</p>
+              <p class="para-light">Fact checked by Fact-Checker A</p>
+              <a href="#" class="btn btn-primary button-Fact">See Fact Check</a>
+            </div>
+          </div>
+          <p class="para-center para-light">Fact checker A is certified by the International Fact-Checking Network. Learn More</p>
+        </div>
+        <div class="modal-body">
+          <h6><b>What You Can Do</b></h6>
+          <ul class="list-group">
+            <li class="list-group-item borderless"><button class="btn_high rounded-circle">
+              <i class="fa-solid fa-trash"></i>
+            </button> Delete Post</li>
+            <li class="list-group-item borderless"> <button class="btn_high rounded-circle">
+              <i class="fa-solid fa-lightbulb"></i>
+            </button>Learn More about fact-checks</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
   <header>
     <nav class="navbar navbar-light bg-light">
       <a class="navbar-brand" href="#">
@@ -142,7 +180,7 @@
                 <a href="#" class="text-bot" data-bs-toggle="modal" data-bs-target="#StaticModal">Sattire Page</a>
               </div>
             </div>
-            <button class="btn_card rounded-circle"><b>...</b>
+            <button class="btn_card rounded-circle" data-bs-toggle="modal" data-bs-target="#FactModal"><b>...</b>
             </button>
           </div>
           <p class="text-justify status">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod

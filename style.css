@@ -240,3 +240,35 @@ hr {
   background-color: #ffffff;
   align-items: center;
 }
+.social_icons {
+	padding: .5em;
+	line-height: 1.22;
+  float: left;
+}
+.fact_para{
+  text-align:start;
+  font-size: 13px;
+  padding-left: 35px;
+}
+.card-text{
+  font-size: 18px;
+  font-weight: bold;
+  padding-top: 12px;
+}
+.button-Fact{
+  max-width: 100%;
+  width: 100%;
+}
+.para-center{
+  text-align: center;
+  font-size: 13px;
+}
+.para-light{
+  color: #777!important;
+  font-size:13px;
+}
+
+.borderless{
+  border: 0 none;
+  padding-left: 0px;
+}
