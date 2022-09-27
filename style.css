@@ -150,39 +150,47 @@ hr {
 .card-design {
   padding-top: 10px;
 }
-.status{
-  padding-left:  10px;
+
+.status {
+  padding-left: 10px;
 
 }
-.text-bot{
+
+.text-bot {
   font-size: 10px;
   color: grey;
 }
-.padd-para{
-  padding-left:20px;
+
+.padd-para {
+  padding-left: 20px;
 }
-.modal-dialog{
-   position:fixed;
-   top:auto;
-   right:auto;
-   left:auto;
-   bottom:0;
+
+.modal-dialog {
+  position: fixed;
+  top: auto;
+  right: auto;
+  left: auto;
+  bottom: 0;
 }
-.likeclass{
+
+.likeclass {
   text-align: center;
   font-size: 30px;
   padding-top: 10px;
 }
-.liketitle{
+
+.liketitle {
   text-align: center;
   font-size: 30px;
 }
-.likebody{
+
+.likebody {
   font-size: 14px;
   text-align: center;
   padding: 12px 0px 10px 1px;
 }
-.likebutton1{
+
+.likebutton1 {
   max-width: 100%;
   margin: 10px auto;
   width: 100%;
@@ -192,7 +200,8 @@ hr {
   border: none;
   border-radius: 5px;
 }
-.likebutton2{
+
+.likebutton2 {
   max-width: 100%;
   margin: 10px auto;
   width: 100%;
@@ -202,17 +211,20 @@ hr {
   border: none;
   border-radius: 5px;
 }
-.sharetitle{
+
+.sharetitle {
   text-align: center;
   font-size: 20px;
 }
-.sharebody{
+
+.sharebody {
   font-size: 14px;
   text-align: center;
   padding: 12px 0px 10px 1px;
   /* background-color: #a09c9c; */
 }
-.emotionSection{
+
+.emotionSection {
   border: none;
   max-width: 100%;
   width: 100%;
@@ -220,22 +232,69 @@ hr {
   padding: 0px;
   font-size: 18px;
 }
-.imageContainer{
+
+.imageContainer {
   position: relative;
   text-align: center;
   color: rgb(58, 53, 53);
   color: #fff;
 }
+
 .centered {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
-.img-op{
+
+.img-op {
   opacity: 0.65;
 }
 
-.para-op{
+.para-op {
   font-size: 10px;
+}
+
+.btn_card {
+  border: none;
+  background-color: #ffffff;
+  align-items: center;
+}
+
+.social_icons {
+  padding: .5em;
+  line-height: 1.22;
+  float: left;
+}
+
+.fact_para {
+  text-align: start;
+  font-size: 13px;
+  padding-left: 35px;
+}
+
+.card-text {
+  font-size: 18px;
+  font-weight: bold;
+  padding-top: 12px;
+}
+
+.button-Fact {
+  max-width: 100%;
+  width: 100%;
+}
+
+.para-center {
+  text-align: center;
+  font-size: 13px;
+}
+
+.para-light {
+  color: #777 !important;
+  font-size: 13px;
+}
+
+.borderless {
+  border: 0 none;
+  padding-left: 0px;
 }
