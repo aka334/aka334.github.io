@@ -5,7 +5,10 @@
 .navbar {
   border-bottom: 0.5px solid rgb(116, 120, 224);
 }
-
+a:link{
+  text-decoration: none;
+  color: black;
+}
 .btn_high {
   width: 10px;
   height: 35px;
@@ -153,6 +156,7 @@ hr {
 }
 .text-bot{
   font-size: 10px;
+  color: grey;
 }
 .padd-para{
   padding-left:20px;
