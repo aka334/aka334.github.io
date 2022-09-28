@@ -270,7 +270,8 @@
             <hr>
             <div class="d-flex justify-content-between align-items-center">
               <div class="d-flex flex-row icons d-flex align-items-center">
-                <i class="fa fa-heart"></i>
+                <i class="fa-solid fa-thumbs-up" style="color: blue; font-size: 18px;"></i>
+                <i class="fa-brands fa-gratipay" style="color: red; font-size: 18px;"></i> &nbsp; John Doe and 22 others
                 <i class="fa fa-smile-o ml-2"></i>
               </div>
               <div class="d-flex flex-row muted-color"> <span>2 comments</span> </div>
@@ -278,7 +279,7 @@
             <hr>
             <nav class="navbar comment-section">
               <div class="col-4">
-                <button class="emotionSection" data-bs-toggle="modal" data-bs-target="#LikeModal"><i
+                <button class="emotionSection" id ="likebtn1" onclick="setColor('likebtn1')"><i
                     class="fa-solid fa-thumbs-up"></i> Like</button>
               </div>
               <div class="col-4">
@@ -320,7 +321,8 @@
             <hr>
             <div class="d-flex justify-content-between align-items-center">
               <div class="d-flex flex-row icons d-flex align-items-center">
-                <i class="fa fa-heart"></i>
+                <i class="fa-solid fa-thumbs-up" style="color: blue; font-size: 18px;"></i>
+                <i class="fa-brands fa-gratipay" style="color: red; font-size: 18px;"></i> &nbsp; John Doe and 22 others
                 <i class="fa fa-smile-o ml-2"></i>
               </div>
               <div class="d-flex flex-row muted-color"> <span>2 comments</span> </div>
@@ -328,7 +330,7 @@
             <hr>
             <nav class="navbar comment-section">
               <div class="col-4">
-                <button class="emotionSection btn btn-light" data-bs-toggle="modal" data-bs-target="#LikeModal"><i
+                <button class="emotionSection" id ="likebtn2" onclick="setColor('likebtn2')"><i
                     class="fa-solid fa-thumbs-up"></i> Like</button>
               </div>
               <div class="col-4">
@@ -345,7 +347,7 @@
       </div>
     </div>
   </div>
-  
+
   <script src="./script.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
     integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
