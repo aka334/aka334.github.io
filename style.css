@@ -332,3 +332,6 @@ hr {
 .hoverObject{
   padding-top: 20px;
 }
+.emotionSection:active{
+    color: blue;
+  }
