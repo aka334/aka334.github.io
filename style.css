@@ -305,18 +305,19 @@ hr {
 .tooltip-wrap .tooltip-content{
   display: none;
   position: absolute;
-  top: 145%;
-  left:-23%;
+  top: 100%;
+  /* left: 50%; */
+  margin-left: -60px ;
   /* right:5%; */
   background-color: #ffffff;
-  padding: 0.5em;
-  min-width: 10rem;
+  /* padding: 0.5em; */
+  /* min-width: 10rem; */
 }
 .tooltip-wrap:hover .tooltip-content{
   display: block;
 }
 .card-img, .card-img-bottom, .card-img-top {
-  width: 110%;
+  width: 100%;
 }
 .title-card{
   padding-top: 10px;
