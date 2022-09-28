@@ -166,7 +166,6 @@
         <i class="fa-regular fa-bars"></i>
         <h6 class="bot-menu">Menu</h6>
       </div>
-      </div>
     </nav>
   </header>
 
@@ -177,7 +176,27 @@
           <div class="d-flex justify-content-between p-2 px-3">
             <div class="d-flex flex-row align-items-center"> <img src="./img/profile.jpg" width="50"
                 class="rounded-circle">
-              <div class="d-flex flex-column ml-2"> <span class="font-weight-bold">Future Mayor of the year</span>
+              <div class="d-flex flex-column ml-2">
+                <span class="font-weight-bold tooltip-wrap">
+                  Future Mayor of the year <div class="tooltip-content">
+                    <div class="card" style="width: 22rem;">
+                      <div class="card-body">
+                        <div class="row">
+                          <div class="col-4"> <img class="card-img-top" src="./img/profile.jpg"></div>
+                          <div class="col-8 title-card">Future Mayor of the year<br>Satire Page <br><br>
+                            <i class="fa-solid fa-thumbs-up"></i>110 people like this<br></div>
+                        </div>
+                        <div class="hoverObject">
+                          <a href="#" class="btn btn-primary btn1" data-bs-toggle="modal" data-bs-target="#LikeModal"><i
+                              class="fa-solid fa-thumbs-up"></i> Like</a>
+                          <a href="#" class="btn btn-primary btn2"><i class="fa-brands fa-facebook-messenger"></i></a>
+                          <a href="#" class="btn btn-primary btn2">...</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </span>
+
                 <a href="#" class="text-bot" data-bs-toggle="modal" data-bs-target="#StaticModal">Sattire Page</a>
               </div>
             </div>
@@ -203,8 +222,7 @@
             <hr>
             <nav class="navbar comment-section">
               <div class="col-4">
-                <button class="emotionSection" data-bs-toggle="modal" data-bs-target="#LikeModal"><i
-                    class="fa-solid fa-thumbs-up"></i> Like</button>
+                <button class="emotionSection"><i class="fa-solid fa-thumbs-up"></i> Like</button>
               </div>
               <div class="col-4">
                 <button class="emotionSection"><i class="fa-solid fa-comment"></i> Comment</button>

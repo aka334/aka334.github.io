@@ -298,3 +298,37 @@ hr {
   border: 0 none;
   padding-left: 0px;
 }
+.tooltip-wrap{
+  position: relative;
+  cursor: pointer;
+}
+.tooltip-wrap .tooltip-content{
+  display: none;
+  position: absolute;
+  top: 145%;
+  left:-23%;
+  /* right:5%; */
+  background-color: #ffffff;
+  padding: 0.5em;
+  min-width: 10rem;
+}
+.tooltip-wrap:hover .tooltip-content{
+  display: block;
+}
+.card-img, .card-img-bottom, .card-img-top {
+  width: 110%;
+}
+.title-card{
+  padding-top: 10px;
+}
+.btn1{
+  width: 230px;
+}
+.btn2{
+  width: fit-content;
+  text-align: center;
+  font-size: 14px;
+}
+.hoverObject{
+  padding-top: 20px;
+}
