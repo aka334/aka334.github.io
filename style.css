@@ -307,6 +307,7 @@ hr {
   position: absolute;
   top: 100%;
   /* left: 50%; */
+  max-width: fit-content;
   margin-left: -60px ;
   /* right:5%; */
   background-color: #ffffff;
@@ -324,11 +325,13 @@ hr {
 }
 .btn1{
   width: 230px;
+  color:white;
 }
 .btn2{
   width: fit-content;
   text-align: center;
   font-size: 14px;
+  color:white;
 }
 .hoverObject{
   padding-top: 20px;
