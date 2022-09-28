@@ -95,7 +95,7 @@
               <button type="button" class="btn btn-info rounded-circle" style="font-size:12px; ">A</button>
               <p class="card-text">This image is NOT testing viewers' stress level but i just an optical illusion.</p>
               <p class="para-light">Fact checked by Fact-Checker A</p>
-              <a href="#" class="btn btn-primary button-Fact">See Fact Check</a>
+              <a href="http://www.google.com" class="btn btn-primary button-Fact">See Fact Check</a>
             </div>
           </div>
           <p class="para-center para-light">Fact checker A is certified by the International Fact-Checking Network.
@@ -118,7 +118,7 @@
   <header>
     <nav class="navbar navbar-light bg-light">
       <a class="navbar-brand" href="#">
-        <img src="https://static.xx.fbcdn.net/rsrc.php/y8/r/dF5SId3UHWd.svg" width="100" alt="" />
+        <img src="https://static.xx.fbcdn.net/rsrc.php/y8/r/dF5SId3UHWd.svg" width="150" alt="" />
       </a>
       <div class="my-lg-2">
         <!-- Search Icon -->
@@ -187,7 +187,7 @@
                             <i class="fa-solid fa-thumbs-up"></i>110 people like this<br></div>
                         </div>
                         <div class="hoverObject">
-                          <a href="#" class="btn btn-primary btn1" data-bs-toggle="modal" data-bs-target="#LikeModal"><i
+                          <a href="#" class="btn btn-primary btn1"data-bs-toggle="modal" data-bs-target="#LikeModal"><i
                               class="fa-solid fa-thumbs-up"></i> Like</a>
                           <a href="#" class="btn btn-primary btn2"><i class="fa-brands fa-facebook-messenger"></i></a>
                           <a href="#" class="btn btn-primary btn2">...</a>
@@ -219,7 +219,7 @@
             <hr>
             <nav class="navbar comment-section">
               <div class="col-4">
-                <button class="emotionSection"><i class="fa-solid fa-thumbs-up"></i> Like</button>
+                <button class="emotionSection" id ="likebtn" onclick="setColor('likebtn')"><i class="fa-solid fa-thumbs-up"></i> Like</button>
               </div>
               <div class="col-4">
                 <button class="emotionSection"><i class="fa-solid fa-comment"></i> Comment</button>
@@ -345,7 +345,7 @@
       </div>
     </div>
   </div>
-
+  
   <script src="./script.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
     integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
