@@ -70,8 +70,9 @@
           <h1 class="sharetitle"><b>You're about to share this article without opening it.</b></h1>
           <p class="sharebody">Sharing the article without reading them may mean missing key facts.
           </p>
-          <button class="likebutton2">Open Article</button><br>
-          <button class="likebutton2">Continue Sharing</button>
+          <button class="likebutton2"><a href=" https://youtu.be/quU3bG7lVfY" target="_blank"
+              rel="noopener noreferrer" style="text-decoration: none; color:black;">Open Article </a></button><br>
+          <button class="likebutton2" data-bs-dismiss="modal">Continue Sharing</button>
         </div>
       </div>
     </div>
@@ -90,26 +91,19 @@
         </div>
         <div class="modal-body">
           <h6><b>From Independent Fact Checkers</b></h6>
-          <div class="card shadow">
-            <div class="card-body">
-              <button type="button" class="btn btn-info rounded-circle" style="font-size:12px; ">A</button>
-              <p class="card-text">This image is NOT testing viewers' stress level but i just an optical illusion.</p>
-              <p class="para-light">Fact checked by Fact-Checker A</p>
-              <a href="http://www.google.com" class="btn btn-primary button-Fact">See Fact Check</a>
-            </div>
-          </div>
-          <p class="para-center para-light">Fact checker A is certified by the International Fact-Checking Network.
-            Learn More</p>
+          <a href="https://www.youtube.com/watch?v=quU3bG7lVfY" target="_blank" rel="noopener noreferrer"
+            class="btn btn-primary button-Fact">See Fact Check</a>
+          <p class="para-center para-light">Fact checker is certified by the International Fact-Checking Network.</p>
         </div>
         <div class="modal-body">
           <h6><b>What You Can Do</b></h6>
           <ul class="list-group">
-            <li class="list-group-item borderless"><button class="btn_high rounded-circle">
+            <li class="list-group-item borderless" data-bs-dismiss="modal"> <button class="btn_high rounded-circle">
                 <i class="fa-solid fa-trash"></i>
-              </button> Delete Post</li>
-            <li class="list-group-item borderless"> <button class="btn_high rounded-circle">
-                <i class="fa-solid fa-lightbulb"></i>
-              </button>Learn More about fact-checks</li>
+              </button>Delete Post</li>
+            <li class="list-group-item borderless" data-bs-dismiss="modal"> <button class="btn_high rounded-circle">
+                <i class="fa-solid fa-trash-can-arrow-up"></i>
+              </button>Don't Delete</li>
           </ul>
         </div>
       </div>
@@ -134,7 +128,7 @@
     <!-- Image and text -->
     <div class="input-group mb-3">
       <!-- <div class="input-group-prepend"> -->
-      <img src="./img/profile.jpg" height="55px" width="55px">
+      <img src="./img/user_profile.png" height="55px" width="55px">
       <!-- </div> -->
       <input type="text" class="form-control" placeholder="What on your mind?" />
       <div class="album">
@@ -182,14 +176,16 @@
                     <div class="card" style="width: 22rem;">
                       <div class="card-body">
                         <div class="row">
-                          <div class="col-4"> <img class="card-img-top" src="./img/profile.jpg"></div>
+                          <div class="col-4"> <img class="card-img-top" src="./img/profile.jpg" ></div>
                           <div class="col-8 title-card">Future Mayor of the year<br>Satire Page <br><br>
-                            <i class="fa-solid fa-thumbs-up" style="color: grey;"></i> 110 people like this<br></div>
+                            <i class="fa-solid fa-thumbs-up" style="color: grey;"></i> 110 people like this<br>
+                          </div>
                         </div>
                         <div class="hoverObject">
                           <div href="#" class="btn btn-primary btn1a" data-bs-toggle="modal"
                             data-bs-target="#LikeModal">
-                            <i class="fa-solid fa-thumbs-up"></i> Like</div>
+                            <i class="fa-solid fa-thumbs-up"></i> Like
+                          </div>
                           <div href="#" class="btn btn-primary btn2a"><i class="fa-brands fa-facebook-messenger"></i>
                           </div>
                           <div href="#" class="btn btn-primary btn2a">...</div>
@@ -244,29 +240,26 @@
         <div class="card">
           <div class="d-flex justify-content-between p-2 px-3">
 
-            <div class="d-flex flex-row align-items-center"> <img src="./img/profile.jpg" width="50"
+            <div class="d-flex flex-row align-items-center"> <img src="./img/user_profile.png" width="50"
                 class="rounded-circle">
-              <div class="d-flex flex-column ml-2"> <span class="font-weight-bold">Alex Raj</span>
-                <a href="#" class="text-bot" data-bs-toggle="modal" data-bs-target="#StaticModal">Thursday at 2:04pm</a>
+              <div class="d-flex flex-column ml-2"> <span class="font-weight-bold">Your Account</span>
+                <div href="#" class="text-bot">Thursday at 2:04pm</div>
               </div>
             </div>
             <button class="btn_card rounded-circle"><b>...</b>
             </button>
           </div>
-          <p class="text-justify status">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-            tempor
-            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-            laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
-            esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
-            qui officia deserunt mollit anim id est laborum.</p>
+          <p class="text-justify status">To label CO2 as a "pollutant" is a disservice to a gas that has played an
+            enormous role in the development and sustainability of all life on this wonderful earth. Plants need it to
+            survive and maintain natural order. Mother earth has clearly ruled that CO2 is not a pollutant!</p>
           <div class="container imageContainer">
-            <img src="./img/img3.png" class="img-fluid img-op">
+            <img src="./img/user_post.jpg" class="img-fluid img-op">
             <div class="centered">
               <i class="fa-solid fa-circle-info"></i>
-              <h6><b> False Information</b></h6>
-              <p class="para-op">Checked by independent fact checker</p>
+              <h6 style="font-size: 16px;"><b> Flagged as Misinformation</b></h6>
+              <p class="para-op" style="font-size: 12px;">Checked by independent fact checker</p>
               <button type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#FactModal">See
-                Why</button>
+                Why? </button>
             </div>
           </div>
           <div class="p-2">
@@ -365,22 +358,20 @@
       <div class="col-md-6 card-design">
         <div class="card">
           <div class="d-flex justify-content-between p-2 px-3">
-            <div class="d-flex flex-row align-items-center"> <img src="./img/profile.jpg" width="50"
+            <div class="d-flex flex-row align-items-center"> <img src="./img/profile_info1.png" width="40px" height="40px"
                 class="rounded-circle">
-              <div class="d-flex flex-column ml-2"> <span class="font-weight-bold">Future Mayor of the year</span>
-                <a href="#" class="text-bot" data-bs-toggle="modal" data-bs-target="#StaticModal">Sattire Page</a>
+              <div class="d-flex flex-column ml-2"> <span class="font-weight-bold">&nbsp;Let Freedom Speak</span>
+                <a href="#" class="text-bot"></a>
               </div>
             </div>
             <button class="btn_card rounded-circle"><b>...</b>
             </button>
           </div>
-          <p class="text-justify status">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-            tempor
-            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-            laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
-            esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
-            qui officia deserunt mollit anim id est laborum.</p>
-          <img src="./img/img2.jfif" class="img-fluid">
+          <p class="text-justify status"></p>
+          <video controls>
+            <source src="img/video1.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
           <div class="p-2">
             <hr>
             <div class="d-flex justify-content-between align-items-center">
@@ -415,10 +406,10 @@
   <script src="./script.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
     integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
-  </script>
+    </script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
     integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
-  </script>
+    </script>
 </body>
 
 </html>
