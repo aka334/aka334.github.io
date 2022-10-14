@@ -15,107 +15,8 @@
 
 <body>
 
-  <!-- Static Information Label -->
-  <div class="modal fade" id="StaticModal" tabindex="-1" aria-labelledby="myModal" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="staticModalLabel">
-            <div class="d-flex flex-row align-items-center"> <img src="./img/profile.jpg" width="50"
-                class="rounded-circle">
-              <div class="d-flex flex-column ml-2"> <span class="font-weight-bold">Future Mayor of the year</span>
-                <small class="text-primary">Satire Page</small>
-              </div>
-            </div>
-          </h5>
-        </div>
-        <div class="modal-body">
+ 
 
-          <h6><i class="fa-solid fa-circle-info"></i><b> What is Satire Page?</b></h6>
-          <p class="padd-para">They're way for people to share social commentary by using humor, exxageration, and
-            absundity to make a
-            point</p>
-          <h6><i class="fa-sharp fa-solid fa-flag"></i><b> Why are they labbeled Satire Pages?</b></h6>
-          <p class="padd-para">Post from Satire Pages can appear very similar to posts from public figures or
-            conventional news sources.
-            Pages can label themselves as Satire Pages to help avoid this confusion </p>
-        </div>
-        <div class="modal-footer">
-          <small>Facebook is providing this information to help you better understand this Page</small>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- Like Interventional Label -->
-  <div class="modal fade" id="LikeModal" tabindex="-1" aria-labelledby="myModal" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-body">
-          <p class="likeclass"><i class="fa-solid fa-circle-info"></i></p>
-          <h1 class="liketitle"><b>The page has repeatedly shared false information</b></h1>
-          <p class="likebody">Independent Fact checker has said the information is false. <a href="" #>Learn More</a>
-          </p>
-          <button class="likebutton1" data-bs-dismiss="modal">Go Back</button><br>
-
-          <button class="likebutton2"
-            onclick="window.open('https://iopscience.iop.org/article/10.1088/1748-9326/11/4/048002',' _blank')"
-            rel="noopener noreferrer">Follow Page
-            Anyway</button>
-        </div>
-      </div>
-    </div>
-  </div> <!-- Share Intervention Label -->
-  <div class="modal fade" id="ShareModal" tabindex="-1" aria-labelledby="myModal" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-body">
-          <p class="likeclass"><i class="fa-solid fa-circle-info"></i></p>
-          <h1 class="sharetitle"><b>You're about to share this article without opening it.</b></h1>
-          <p class="sharebody">Sharing the article without reading them may mean missing key facts.
-          </p>
-          <button class="likebutton2"><a href=" https://youtu.be/quU3bG7lVfY" target="_blank" rel="noopener noreferrer"
-              style="text-decoration: none; color:black;">Open Article
-            </a></button><br>
-          <button class="likebutton2" data-bs-dismiss="modal">Continue Sharing</button>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- Independent Fact Check label -->
-  <div class="modal fade" id="FactModal" tabindex="-1" aria-labelledby="myModal" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-body">
-          <i class="fa-solid fa-circle-info"></i>
-          <div class="fact_para">Facebook determined your post has the same false information and added a
-            notice to this
-            post</div>
-          <i class="fa-brands fa-facebook"></i>
-          <div class="fact_para">People who repeatedly share false information might have their posts moved
-            lowe in News
-            Feed so other people are less likely to see them.</div>
-        </div>
-        <div class="modal-body">
-          <h6><b>From Independent Fact Checkers</b></h6>
-          <a href="https://www.youtube.com/watch?v=quU3bG7lVfY" target="_blank" rel="noopener noreferrer"
-            class="btn btn-primary button-Fact">See Fact Check</a>
-          <p class="para-center para-light">Fact checker is certified by the International Fact-Checking
-            Network.</p>
-        </div>
-        <div class="modal-body">
-          <h6><b>What You Can Do</b></h6>
-          <ul class="list-group">
-            <li class="list-group-item borderless" data-bs-dismiss="modal"> <button class="btn_high rounded-circle">
-                <i class="fa-solid fa-trash"></i>
-              </button>Delete Post</li>
-            <li class="list-group-item borderless" data-bs-dismiss="modal"> <button class="btn_high rounded-circle">
-                <i class="fa-solid fa-trash-can-arrow-up"></i>
-              </button>Don't Delete</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </div>
   <header>
     <nav class="navbar navbar-light bg-light">
       <a class="navbar-brand" href="#">
@@ -169,7 +70,46 @@
       </div>
     </nav>
   </header>
+  <!-- -------------------------------------------------------------------------------------------------------- -->
+  <!--                                                  Satire Post                                             -->
+  <!-- -------------------------------------------------------------------------------------------------------- -->
+  <!-- Like Interventional satire Label -->
+  <div class="modal fade" id="SatireLikeModal" tabindex="-1" aria-labelledby="myModal" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-body">
+          <p class="likeclass"><i class="fa-solid fa-circle-info"></i></p>
+          <h1 class="liketitle"><b>The page has repeatedly shared false information</b></h1>
+          <p class="likebody">Independent Fact checker has said the information is false. <a href="" #>Learn More</a>
+          </p>
+          <button class="likebutton1" data-bs-dismiss="modal">Go Back</button><br>
 
+          <button class="likebutton2"
+            onclick="window.open('https://response.restoration.noaa.gov/oil-and-chemical-spills/oil-spills/how-oil-harms-animals-and-plants-marine-environments.html',' _blank')"
+            rel="noopener noreferrer">Follow Page
+            Anyway</button>
+        </div>
+      </div>
+    </div>
+  </div> 
+  <!-- Share Intervention Label -->
+  <div class="modal fade" id="SatireShareModal" tabindex="-1" aria-labelledby="myModal" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-body">
+          <p class="likeclass"><i class="fa-solid fa-circle-info"></i></p>
+          <h1 class="sharetitle"><b>You're about to share this article without opening it.</b></h1>
+          <p class="sharebody">Sharing the article without reading them may mean missing key facts.
+          </p>
+          <button class="likebutton2" onclick="window.open('https://response.restoration.noaa.gov/oil-and-chemical-spills/oil-spills/how-oil-harms-animals-and-plants-marine-environments.html',' _blank')"
+          rel="noopener noreferrer">Open Article
+          </button><br>
+          <button class="likebutton2" data-bs-dismiss="modal">Continue Sharing</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Satire Page card -->
   <div class="container mt-12 mb-12">
     <div class="row d-flex align-items-center justify-content-center">
       <div class="col-md-6 card-design">
@@ -179,7 +119,8 @@
                 class="rounded-circle">
               <div class="d-flex flex-column ml-2">
                 <span class="font-weight-bold tooltip-wrap">
-                  &nbsp; Science Geek<div class="tooltip-content">
+                  &nbsp; Science Geek
+                  <div class="tooltip-content">
                     <div class="card" style="width: 22rem;">
                       <div class="card-body">
                         <div class="row">
@@ -192,7 +133,7 @@
                         </div>
                         <div class="hoverObject">
                           <div href="#" class="btn btn-primary btn1a" data-bs-toggle="modal"
-                            data-bs-target="#LikeModal">
+                            data-bs-target="#SatireLikeModal">
                             <i class="fa-solid fa-thumbs-up"></i> Like
                           </div>
                           <div href="#" class="btn btn-primary btn2a"><i class="fa-brands fa-facebook-messenger"></i>
@@ -203,7 +144,7 @@
                     </div>
                   </div>
                 </span>
-                <a href="#" class="text-bot" data-bs-toggle="modal" data-bs-target="#StaticModal">&nbsp;
+                <a href="#" class="text-bot" data-bs-toggle="modal" data-bs-target="#UserStaticModal">&nbsp;
                   &nbsp; Satire
                   Page</a>
               </div>
@@ -237,7 +178,7 @@
                 <button class="emotionSection"><i class="fa-solid fa-comment"></i> Comment</button>
               </div>
               <div class="col-4">
-                <button class="emotionSection" data-bs-toggle="modal" data-bs-target="#ShareModal"><i
+                <button class="emotionSection" data-bs-toggle="modal" data-bs-target="#SatireShareModal"><i
                     class="fa-solid fa-share-from-square"></i> Share</h6></button>
               </div>
             </nav>
@@ -247,6 +188,110 @@
       </div>
     </div>
   </div>
+  <!-- -------------------------------------------------------------------------------------------------------- -->
+  <!--                                                  User Post                                             -->
+  <!-- -------------------------------------------------------------------------------------------------------- -->
+   <!-- Static Information Label -->
+   <div class="modal fade" id="UserStaticModal" tabindex="-1" aria-labelledby="myModal" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="staticModalLabel">
+            <div class="d-flex flex-row align-items-center"> <img src="./img/profile.jpg" width="50"
+                class="rounded-circle">
+              <div class="d-flex flex-column ml-2"> <span class="font-weight-bold">Future Mayor of the year</span>
+                <small class="text-primary">Satire Page</small>
+              </div>
+            </div>
+          </h5>
+        </div>
+        <div class="modal-body">
+
+          <h6><i class="fa-solid fa-circle-info"></i><b> What is Satire Page?</b></h6>
+          <p class="padd-para">They're way for people to share social commentary by using humor, exxageration, and
+            absundity to make a
+            point</p>
+          <h6><i class="fa-sharp fa-solid fa-flag"></i><b> Why are they labbeled Satire Pages?</b></h6>
+          <p class="padd-para">Post from Satire Pages can appear very similar to posts from public figures or
+            conventional news sources.
+            Pages can label themselves as Satire Pages to help avoid this confusion </p>
+        </div>
+        <div class="modal-footer">
+          <small>Facebook is providing this information to help you better understand this Page</small>
+        </div>
+      </div>
+    </div>
+  </div>
+    <!-- Like Interventional Label -->
+    <div class="modal fade" id="UserLikeModal" tabindex="-1" aria-labelledby="myModal" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-body">
+            <p class="likeclass"><i class="fa-solid fa-circle-info"></i></p>
+            <h1 class="liketitle"><b>The page has repeatedly shared false information</b></h1>
+            <p class="likebody">Independent Fact checker has said the information is false. <a href="" #>Learn More</a>
+            </p>
+            <button class="likebutton1" data-bs-dismiss="modal">Go Back</button><br>
+  
+            <button class="likebutton2"
+              onclick="window.open('https://youtu.be/quU3bG7lVfY',' _blank')"
+              rel="noopener noreferrer">Follow Page
+              Anyway</button>
+          </div>
+        </div>
+      </div>
+    </div> <!-- Share Intervention Label -->
+    <div class="modal fade" id="UserShareModal" tabindex="-1" aria-labelledby="myModal" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-body">
+            <p class="likeclass"><i class="fa-solid fa-circle-info"></i></p>
+            <h1 class="sharetitle"><b>You're about to share this article without opening it.</b></h1>
+            <p class="sharebody">Sharing the article without reading them may mean missing key facts.
+            </p>
+            <button class="likebutton2" onclick="window.open('https://youtu.be/quU3bG7lVfY',' _blank')"
+            rel="noopener noreferrer">Open Article
+             </button><br>
+            <button class="likebutton2" data-bs-dismiss="modal">Continue Sharing</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Independent Fact Check label -->
+    <div class="modal fade" id="UserFactModal" tabindex="-1" aria-labelledby="myModal" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-body">
+            <i class="fa-solid fa-circle-info"></i>
+            <div class="fact_para">Facebook determined your post has the same false information and added a
+              notice to this
+              post</div>
+            <i class="fa-brands fa-facebook"></i>
+            <div class="fact_para">People who repeatedly share false information might have their posts moved
+              lowe in News
+              Feed so other people are less likely to see them.</div>
+          </div>
+          <div class="modal-body">
+            <h6><b>From Independent Fact Checkers</b></h6>
+            <a href="https://www.youtube.com/watch?v=quU3bG7lVfY" target="_blank" rel="noopener noreferrer"
+              class="btn btn-primary button-Fact">See Fact Check</a>
+            <p class="para-center para-light">Fact checker is certified by the International Fact-Checking
+              Network.</p>
+          </div>
+          <div class="modal-body">
+            <h6><b>What You Can Do</b></h6>
+            <ul class="list-group">
+              <li class="list-group-item borderless" data-bs-dismiss="modal"> <button class="btn_high rounded-circle">
+                  <i class="fa-solid fa-trash"></i>
+                </button>Delete Post</li>
+              <li class="list-group-item borderless" data-bs-dismiss="modal"> <button class="btn_high rounded-circle">
+                  <i class="fa-solid fa-trash-can-arrow-up"></i>
+                </button>Don't Delete</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
   <div class="container mt-12 mb-12">
     <div class="row d-flex align-items-center justify-content-center">
       <div class="col-md-6 card-design">
@@ -274,7 +319,7 @@
               <i class="fa-solid fa-circle-info"></i>
               <h6 style="font-size: 16px;"><b> Flagged as Misinformation</b></h6>
               <p class="para-op" style="font-size: 12px;">Checked by independent fact checker</p>
-              <button type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#FactModal">See
+              <button type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#UserFactModal">See
                 Why? </button>
             </div>
           </div>
@@ -299,7 +344,7 @@
                 <button class="emotionSection"><i class="fa-solid fa-comment"></i> Comment</button>
               </div>
               <div class="col-4">
-                <button class="emotionSection" data-bs-toggle="modal" data-bs-target="#ShareModal"><i
+                <button class="emotionSection" data-bs-toggle="modal" data-bs-target="#UserShareModal"><i
                     class="fa-solid fa-share-from-square"></i> Share</h6></button>
               </div>
             </nav>
@@ -309,73 +354,44 @@
       </div>
     </div>
   </div>
-  <div class="container mt-12 mb-12">
-    <div class="row d-flex align-items-center justify-content-center">
-      <div class="col-md-6 card-design">
-        <div class="card">
-          <div class="d-flex justify-content-between p-2 px-3">
-
-            <div class="d-flex flex-row align-items-center"> <img src="./img/profile.jpg" width="50"
-                class="rounded-circle">
-              <div class="d-flex flex-column ml-2"> <span class="font-weight-bold">Alex Raj</span>
-                <a href="#" class="text-bot" data-bs-toggle="modal" data-bs-target="#StaticModal">Thursday at
-                  2:04pm</a>
-              </div>
-            </div>
-            <button class="btn_card rounded-circle"><b>...</b>
-            </button>
-          </div>
-          <p class="text-justify status">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod
-            tempor
-            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-            ullamco
-            laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
-            voluptate velit
-            esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt
-            in culpa
-            qui officia deserunt mollit anim id est laborum.</p>
-          <div class="container imageContainer">
-            <img src="./img/img3.png" class="img-fluid img-op">
-            <div class="centered">
-              <i class="fa-solid fa-circle-info"></i>
-              <h6><b> False Information</b></h6>
-              <p class="para-op">Checked by independent fact checker</p>
-              <button type="button" class="btn btn-light"><a href="http://google.com">See
-                  Why</a></button>
+  <!-- -------------------------------------------------------------------------------------------------------- -->
+  <!--                                                  Let Freedom Speak Post                                             -->
+  <!-- -------------------------------------------------------------------------------------------------------- -->
+      <!-- Like Interventional Label -->
+      <div class="modal fade" id="Profile1_LikeModal" tabindex="-1" aria-labelledby="myModal" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-body">
+              <p class="likeclass"><i class="fa-solid fa-circle-info"></i></p>
+              <h1 class="liketitle"><b>The page has repeatedly shared false information</b></h1>
+              <p class="likebody">Independent Fact checker has said the information is false. <a href="" #>Learn More</a>
+              </p>
+              <button class="likebutton1" data-bs-dismiss="modal">Go Back</button><br>
+    
+              <button class="likebutton2"
+                onclick="window.open('https://iopscience.iop.org/article/10.1088/1748-9326/11/4/048002',' _blank')"
+                rel="noopener noreferrer">Follow Page
+                Anyway</button>
             </div>
           </div>
-          <div class="p-2">
-            <hr>
-            <div class="d-flex justify-content-between align-items-center">
-              <div class="d-flex flex-row icons d-flex align-items-center">
-                <i class="fa-solid fa-thumbs-up" style="color: blue; font-size: 18px;"></i>
-                <i class="fa-brands fa-gratipay" style="color: red; font-size: 18px;"></i> &nbsp; John Doe and
-                22 others
-                <i class="fa fa-smile-o ml-2"></i>
-              </div>
-              <div class="d-flex flex-row muted-color"> <span>2 comments</span> </div>
+        </div>
+      </div> <!-- Share Intervention Label -->
+      <div class="modal fade" id="Profile1_ShareModal" tabindex="-1" aria-labelledby="myModal" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-body">
+              <p class="likeclass"><i class="fa-solid fa-circle-info"></i></p>
+              <h1 class="sharetitle"><b>You're about to share this article without opening it.</b></h1>
+              <p class="sharebody">Sharing the article without reading them may mean missing key facts.
+              </p>
+              <button class="likebutton2" onclick="window.open('https://iopscience.iop.org/article/10.1088/1748-9326/11/4/048002',' _blank')"
+              rel="noopener noreferrer">Open Article
+               </button><br>
+              <button class="likebutton2" data-bs-dismiss="modal">Continue Sharing</button>
             </div>
-            <hr>
-            <nav class="navbar comment-section">
-              <div class="col-4">
-                <button class="emotionSection" id="likebtn2" onclick="setColor('likebtn2')"><i
-                    class="fa-solid fa-thumbs-up"></i> Like</button>
-              </div>
-              <div class="col-4">
-                <button class="emotionSection"><i class="fa-solid fa-comment"></i> Comment</button>
-              </div>
-              <div class="col-4">
-                <button class="emotionSection" data-bs-toggle="modal" data-bs-target="#ShareModal"><i
-                    class="fa-solid fa-share-from-square"></i> Share</h6></button>
-              </div>
-            </nav>
-
           </div>
         </div>
       </div>
-    </div>
-  </div>
   <div class="container mt-12 mb-12">
     <div class="row d-flex align-items-center justify-content-center">
       <div class="col-md-6 card-design">
@@ -383,8 +399,33 @@
           <div class="d-flex justify-content-between p-2 px-3">
             <div class="d-flex flex-row align-items-center"> <img src="./img/profile_info1.png" width="40px"
                 height="40px" class="rounded-circle">
-              <div class="d-flex flex-column ml-2"> <span class="font-weight-bold">&nbsp;Let Freedom
-                  Speak</span>
+              <div class="d-flex flex-column ml-2"> 
+                  <span class="font-weight-bold tooltip-wrap">
+                    &nbsp; Let Freedom Speak
+                    <div class="tooltip-content">
+                      <div class="card" style="width: 22rem;">
+                        <div class="card-body">
+                          <div class="row">
+                            <div class="col-4"> <img class="card-img-top" src="./img/profile_info1.png"></div>
+                            <div class="col-8 title-card">Let Freedom Speak
+                              <p style="font-size: 10px;"></p>
+                              <i class="fa-solid fa-thumbs-up" style="color: grey;"></i> 777 people like
+                              this<br>
+                            </div>
+                          </div>
+                          <div class="hoverObject">
+                            <div href="#" class="btn btn-primary btn1a" data-bs-toggle="modal"
+                              data-bs-target="#Profile1_LikeModal">
+                              <i class="fa-solid fa-thumbs-up"></i> Like
+                            </div>
+                            <div href="#" class="btn btn-primary btn2a"><i class="fa-brands fa-facebook-messenger"></i>
+                            </div>
+                            <div href="#" class="btn btn-primary btn2a">...</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </span>
                 <a href="#" class="text-bot"></a>
               </div>
             </div>
@@ -417,7 +458,7 @@
                 <button class="emotionSection"><i class="fa-solid fa-comment"></i> Comment</button>
               </div>
               <div class="col-4">
-                <button class="emotionSection" data-bs-toggle="modal" data-bs-target="#ShareModal"><i
+                <button class="emotionSection" data-bs-toggle="modal" data-bs-target="#Profile1_ShareModal"><i
                     class="fa-solid fa-share-from-square"></i> Share</h6></button>
               </div>
             </nav>
