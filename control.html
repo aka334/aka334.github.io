@@ -118,8 +118,7 @@
                                 <button class="emotionSection"><i class="fa-solid fa-comment"></i> Comment</button>
                             </div>
                             <div class="col-4">
-                                <button class="emotionSection" data-bs-toggle="modal"
-                                    data-bs-target="#UserShareModal"><i class="fa-solid fa-share-from-square"></i> Share
+                                <button class="emotionSection"><i class="fa-solid fa-share-from-square"></i> Share
                                     </h6></button>
                             </div>
                         </nav>
@@ -132,8 +131,6 @@
     <!-- -------------------------------------------------------------------------------------------------------- -->
     <!--                                                  Let Freedom Speak Post                                             -->
     <!-- -------------------------------------------------------------------------------------------------------- -->
-    <!-- Like Interventional Label -->
-
     <div class="container mt-12 mb-12">
         <div class="row d-flex align-items-center justify-content-center">
             <div class="col-md-6 card-design">
@@ -158,8 +155,8 @@
                                                     </div>
                                                 </div>
                                                 <div class="hoverObject">
-                                                    <div href="#" class="btn btn-primary btn1a" data-bs-toggle="modal"
-                                                        data-bs-target="#Profile1_LikeModal">
+                                                    <div href="#" class="btn btn-primary btn1a" id="button1"
+                                                        onclick="buttonText('button1')">
                                                         <i class="fa-solid fa-thumbs-up"></i> Like
                                                     </div>
                                                     <div href="#" class="btn btn-primary btn2a"><i
@@ -205,8 +202,7 @@
                                 <button class="emotionSection"><i class="fa-solid fa-comment"></i> Comment</button>
                             </div>
                             <div class="col-4">
-                                <button class="emotionSection" data-bs-toggle="modal"
-                                    data-bs-target="#Profile1_ShareModal"><i class="fa-solid fa-share-from-square"></i>
+                                <button class="emotionSection"><i class="fa-solid fa-share-from-square"></i>
                                     Share</h6></button>
                             </div>
                         </nav>
@@ -219,80 +215,7 @@
     <!-- -------------------------------------------------------------------------------------------------------- -->
     <!--                                             The Environment Herlad Post                                             -->
     <!-- -------------------------------------------------------------------------------------------------------- -->
-    <!-- Like Interventional Label -->
-    <div class="modal fade" id="Profile2_LikeModal" tabindex="-1" aria-labelledby="myModal" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-body">
-                    <p class="likeclass"><i class="fa-solid fa-circle-info"></i></p>
-                    <h1 class="liketitle"><b>The page has repeatedly shared false information</b></h1>
-                    <p class="likebody">Independent Fact checker has said the information is false. <a
-                            href="https://wattsupwiththat.wpcomstaging.com/2008/02/19/january-2008-4-sources-say-globally-cooler-in-the-past-12-months/"
-                            target="_blank" rel="noopener noreferrer">Learn More</a>
-                    </p>
-                    <button class="likebutton1" data-bs-dismiss="modal">Go Back</button><br>
 
-                    <button class="likebutton2" data-bs-dismiss="modal">Follow Page
-                        Anyway</button>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Share Intervention Label -->
-    <div class="modal fade" id="Profile2_ShareModal" tabindex="-1" aria-labelledby="myModal" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-body">
-                    <p class="likeclass"><i class="fa-solid fa-circle-info"></i></p>
-                    <h1 class="sharetitle"><b>You're about to share this article without opening it.</b></h1>
-                    <p class="sharebody">Sharing the article without reading them may mean missing key facts.
-                    </p>
-                    <button class="likebutton2"
-                        onclick="window.open('https://wattsupwiththat.wpcomstaging.com/2008/02/19/january-2008-4-sources-say-globally-cooler-in-the-past-12-months/',' _blank')"
-                        rel="noopener noreferrer">Open Article
-                    </button><br>
-                    <button class="likebutton2" data-bs-dismiss="modal">Continue Sharing</button>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Independent Fact Check label -->
-    <div class="modal fade" id="UserFactModal3" tabindex="-1" aria-labelledby="myModal" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-body">
-                    <i class="fa-solid fa-circle-info"></i>
-                    <div class="fact_para">Facebook determined your post has the same false information and added a
-                        notice to this
-                        post</div>
-                    <i class="fa-brands fa-facebook"></i>
-                    <div class="fact_para">People who repeatedly share false information might have their posts moved
-                        lowe in News
-                        Feed so other people are less likely to see them.</div>
-                </div>
-                <div class="modal-body">
-                    <h6><b>From Independent Fact Checkers</b></h6>
-                    <a href="https://wattsupwiththat.wpcomstaging.com/2008/02/19/january-2008-4-sources-say-globally-cooler-in-the-past-12-months/"
-                        target="_blank" rel="noopener noreferrer" class="btn btn-primary button-Fact">See Fact Check</a>
-                    <p class="para-center para-light">Fact checker is certified by the International Fact-Checking
-                        Network.</p>
-                </div>
-                <div class="modal-body">
-                    <h6><b>What You Can Do</b></h6>
-                    <ul class="list-group">
-                        <li class="list-group-item borderless" data-bs-dismiss="modal"> <button
-                                class="btn_high rounded-circle">
-                                <i class="fa-solid fa-trash"></i>
-                            </button>Delete Post</li>
-                        <li class="list-group-item borderless" data-bs-dismiss="modal"> <button
-                                class="btn_high rounded-circle">
-                                <i class="fa-solid fa-trash-can-arrow-up"></i>
-                            </button>Don't Delete</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
     <!-- ------------------------------Card--------------------------------------------------------------------- -->
     <div class="container mt-12 mb-12">
         <div class="row d-flex align-items-center justify-content-center">
@@ -318,7 +241,8 @@
                                                     </div>
                                                 </div>
                                                 <div class="hoverObject">
-                                                    <div href="#" class="btn btn-primary btn1a">
+                                                    <div href="#" class="btn btn-primary btn1a" id="button2"
+                                                        onclick="buttonText('button2')">
                                                         <i class="fa-solid fa-thumbs-up"></i> Like
                                                     </div>
                                                     <div href="#" class="btn btn-primary btn2a"><i
@@ -341,24 +265,7 @@
                             https://wattsupwiththat.wpcomstaging.com
                         </a>
                     </p>
-                    <div class="container imageContainer" id="userPost">
-                        <img src="./img/profile2_post.jpg" class="img-fluid img-op" id="imgBlur1">
-                        <div class="centered" id="userDiv1">
-                            <i class="fa-solid fa-circle-info"></i>
-                            <h6 style="font-size: 16px;"><b> Flagged as Misinformation</b></h6>
-                            <p class="para-op" style="font-size: 12px;">Checked by independent fact checker</p>
-                            <button type="button" class="btn btn-light" data-bs-toggle="modal"
-                                data-bs-target="#UserFactModal3">See
-                                Why? </button>
-                        </div>
-                    </div>
-                    <div id="blurButton1" style="text-align: center;">
-                        <button type="button" class="btn btn-md btn-block"
-                            onclick="removeBlur('userDiv1','imgBlur1','blurButton1')" id="blurButton1"><i
-                                class="fa-solid fa-eye-slash"></i>
-                            View
-                            Post</button>
-                    </div>
+                    <img src="./img/profile2_post.jpg" class="img-fluid" id="imgBlur1">
                     <div class="p-2">
                         <hr>
                         <div class="d-flex justify-content-between align-items-center">
@@ -381,8 +288,7 @@
                                 <button class="emotionSection"><i class="fa-solid fa-comment"></i> Comment</button>
                             </div>
                             <div class="col-4">
-                                <button class="emotionSection" data-bs-toggle="modal"
-                                    data-bs-target="#Profile2_ShareModal"><i class="fa-solid fa-share-from-square"></i>
+                                <button class="emotionSection"><i class="fa-solid fa-share-from-square"></i>
                                     Share</h6></button>
                             </div>
                         </nav>
@@ -395,80 +301,7 @@
     <!-- -------------------------------------------------------------------------------------------------------- -->
     <!--                                                  Satire Post                                             -->
     <!-- -------------------------------------------------------------------------------------------------------- -->
-    <!-- Static Information Label -->
-    <div class="modal fade" id="UserStaticModal" tabindex="-1" aria-labelledby="myModal" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="staticModalLabel">
-                        <div class="d-flex flex-row align-items-center"> <img src="./img/profile.jpg" width="50"
-                                class="rounded-circle">
-                            <div class="d-flex flex-column ml-2"> <span class="font-weight-bold">Future Mayor of the
-                                    year</span>
-                                <small class="text-primary">Satire Page</small>
-                            </div>
-                        </div>
-                    </h5>
-                </div>
-                <div class="modal-body">
-                    <div>
-                        <button class="likebutton1"
-                            onclick="window.open('https://response.restoration.noaa.gov/oil-and-chemical-spills/oil-spills/how-oil-harms-animals-and-plants-marine-environments.html',' _blank')"
-                            rel="noopener noreferrer" data-bs-dismiss="modal">See Verified Information</button><br>
-                    </div>
-                    <h6><i class="fa-solid fa-circle-info"></i><b> What is Satire Page?</b></h6>
-                    <p class="padd-para">They're way for people to share social commentary by using humor, exxageration,
-                        and
-                        absundity to make a
-                        point</p>
-                    <h6><i class="fa-sharp fa-solid fa-flag"></i><b> Why are they labbeled Satire Pages?</b></h6>
-                    <p class="padd-para">Post from Satire Pages can appear very similar to posts from public figures or
-                        conventional news sources.
-                        Pages can label themselves as Satire Pages to help avoid this confusion </p>
-                </div>
-                <div class="modal-footer">
-                    <small>Facebook is providing this information to help you better understand this Page</small>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Like Interventional satire Label -->
-    <div class="modal fade" id="SatireLikeModal" tabindex="-1" aria-labelledby="myModal" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-body">
-                    <p class="likeclass"><i class="fa-solid fa-circle-info"></i></p>
-                    <h1 class="liketitle"><b>The page has repeatedly shared false information</b></h1>
-                    <p class="likebody">Independent Fact checker has said the information is false. <a
-                            href="https://response.restoration.noaa.gov/oil-and-chemical-spills/oil-spills/how-oil-harms-animals-and-plants-marine-environments.html"
-                            target="_blank" rel="noopener noreferrer">Learn More</a>
-                    </p>
-                    <button class="likebutton1" data-bs-dismiss="modal">Go Back</button><br>
 
-                    <button class="likebutton2" data-bs-dismiss="modal">Follow Page
-                        Anyway</button>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Share Intervention Label -->
-    <div class="modal fade" id="SatireShareModal" tabindex="-1" aria-labelledby="myModal" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-body">
-                    <p class="likeclass"><i class="fa-solid fa-circle-info"></i></p>
-                    <h1 class="sharetitle"><b>You're about to share this article without opening it.</b></h1>
-                    <p class="sharebody">Sharing the article without reading them may mean missing key facts.
-                    </p>
-                    <button class="likebutton2"
-                        onclick="window.open('https://response.restoration.noaa.gov/oil-and-chemical-spills/oil-spills/how-oil-harms-animals-and-plants-marine-environments.html',' _blank')"
-                        rel="noopener noreferrer">Open Article
-                    </button><br>
-                    <button class="likebutton2" data-bs-dismiss="modal">Continue Sharing</button>
-                </div>
-            </div>
-        </div>
-    </div>
     <!-- Satire Page card -->
     <div class="container mt-12 mb-12">
         <div class="row d-flex align-items-center justify-content-center">
@@ -487,15 +320,15 @@
                                                     <div class="col-4"> <img class="card-img-top"
                                                             src="./img/satire_logo.jpg"></div>
                                                     <div class="col-8 title-card">Science Geek
-                                                        <p style="font-size: 10px;">Satire Page</p>
+                                                        <p style="font-size: 10px;"></p>
                                                         <i class="fa-solid fa-thumbs-up" style="color: grey;"></i> 110
                                                         people like
                                                         this<br>
                                                     </div>
                                                 </div>
                                                 <div class="hoverObject">
-                                                    <div href="#" class="btn btn-primary btn1a" data-bs-toggle="modal"
-                                                        data-bs-target="#SatireLikeModal">
+                                                    <div href="#" class="btn btn-primary btn1a" id="button3"
+                                                        onclick="buttonText('button3')">
                                                         <i class="fa-solid fa-thumbs-up"></i> Like
                                                     </div>
                                                     <div href="#" class="btn btn-primary btn2a"><i
@@ -507,10 +340,8 @@
                                         </div>
                                     </div>
                                 </span>
-                                <a href="#" class="text-bot" data-bs-toggle="modal"
-                                    data-bs-target="#UserStaticModal">&nbsp;
-                                    &nbsp; Satire
-                                    Page</a>
+                                <a href="#" class="text-bot">&nbsp;
+                                    &nbsp; </a>
                             </div>
                         </div>
                         <button class="btn_card rounded-circle"><b>...</b>
@@ -543,8 +374,7 @@
                                 <button class="emotionSection"><i class="fa-solid fa-comment"></i> Comment</button>
                             </div>
                             <div class="col-4">
-                                <button class="emotionSection" data-bs-toggle="modal"
-                                    data-bs-target="#SatireShareModal"><i class="fa-solid fa-share-from-square"></i>
+                                <button class="emotionSection"><i class="fa-solid fa-share-from-square"></i>
                                     Share</h6></button>
                             </div>
                         </nav>
@@ -557,80 +387,6 @@
     <!-- -------------------------------------------------------------------------------------------------------- -->
     <!--                                             Naked Truth Studios Post                                             -->
     <!-- -------------------------------------------------------------------------------------------------------- -->
-    <!-- Like Interventional Label -->
-    <div class="modal fade" id="Profile3_LikeModal" tabindex="-1" aria-labelledby="myModal" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-body">
-                    <p class="likeclass"><i class="fa-solid fa-circle-info"></i></p>
-                    <h1 class="liketitle"><b>The page has repeatedly shared false information</b></h1>
-                    <p class="likebody">Independent Fact checker has said the information is false. <a
-                            href="https://skepticalscience.com/global-warming-natural-cycle.htm" target="_blank"
-                            rel="noopener noreferrer">Learn More</a>
-                    </p>
-                    <button class="likebutton1" data-bs-dismiss="modal">Go Back</button><br>
-
-                    <button class="likebutton2" data-bs-dismiss="modal">Follow Page
-                        Anyway</button>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Share Intervention Label -->
-    <div class="modal fade" id="Profile3_ShareModal" tabindex="-1" aria-labelledby="myModal" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-body">
-                    <p class="likeclass"><i class="fa-solid fa-circle-info"></i></p>
-                    <h1 class="sharetitle"><b>You're about to share this article without opening it.</b></h1>
-                    <p class="sharebody">Sharing the article without reading them may mean missing key facts.
-                    </p>
-                    <button class="likebutton2"
-                        onclick="window.open('https://skepticalscience.com/global-warming-natural-cycle.htm',' _blank')"
-                        rel="noopener noreferrer">Open Article
-                    </button><br>
-                    <button class="likebutton2" data-bs-dismiss="modal">Continue Sharing</button>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Independent Fact Check label -->
-    <div class="modal fade" id="UserFactModal4" tabindex="-1" aria-labelledby="myModal" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-body">
-                    <i class="fa-solid fa-circle-info"></i>
-                    <div class="fact_para">Facebook determined your post has the same false information and added a
-                        notice to this
-                        post</div>
-                    <i class="fa-brands fa-facebook"></i>
-                    <div class="fact_para">People who repeatedly share false information might have their posts moved
-                        lowe in News
-                        Feed so other people are less likely to see them.</div>
-                </div>
-                <div class="modal-body">
-                    <h6><b>From Independent Fact Checkers</b></h6>
-                    <a href="https://skepticalscience.com/global-warming-natural-cycle.htm" target="_blank"
-                        rel="noopener noreferrer" class="btn btn-primary button-Fact">See Fact Check</a>
-                    <p class="para-center para-light">Fact checker is certified by the International Fact-Checking
-                        Network.</p>
-                </div>
-                <div class="modal-body">
-                    <h6><b>What You Can Do</b></h6>
-                    <ul class="list-group">
-                        <li class="list-group-item borderless" data-bs-dismiss="modal"> <button
-                                class="btn_high rounded-circle">
-                                <i class="fa-solid fa-trash"></i>
-                            </button>Delete Post</li>
-                        <li class="list-group-item borderless" data-bs-dismiss="modal"> <button
-                                class="btn_high rounded-circle">
-                                <i class="fa-solid fa-trash-can-arrow-up"></i>
-                            </button>Don't Delete</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
     <!-- ------------------------------Card--------------------------------------------------------------------- -->
     <div class="container mt-12 mb-12">
         <div class="row d-flex align-items-center justify-content-center">
@@ -656,8 +412,8 @@
                                                     </div>
                                                 </div>
                                                 <div class="hoverObject">
-                                                    <div href="#" class="btn btn-primary btn1a" data-bs-toggle="modal"
-                                                        data-bs-target="#Profile3_LikeModal">
+                                                    <div href="#" class="btn btn-primary btn1a" id="button5"
+                                                        onclick="buttonText('button5')">
                                                         <i class="fa-solid fa-thumbs-up"></i> Like
                                                     </div>
                                                     <div href="#" class="btn btn-primary btn2a"><i
@@ -683,24 +439,8 @@
                         </a>
 
                     </p>
-                    <div class="container imageContainer" id="userPost">
-                        <img src="./img/profile4_post.webp" class="img-fluid img-op" id="imgBlur2">
-                        <div class="centered" id="userDiv2">
-                            <i class="fa-solid fa-circle-info"></i>
-                            <h6 style="font-size: 16px;"><b> Flagged as Misinformation</b></h6>
-                            <p class="para-op" style="font-size: 12px;">Checked by independent fact checker</p>
-                            <button type="button" class="btn btn-light" data-bs-toggle="modal"
-                                data-bs-target="#UserFactModal4">See
-                                Why? </button>
-                        </div>
-                    </div>
-                    <div id="blurButton2" style="text-align: center;">
-                        <button type="button" class="btn btn-md btn-block"
-                            onclick="removeBlur('userDiv2','imgBlur2','blurButton2')" id="blurButton1"><i
-                                class="fa-solid fa-eye-slash"></i>
-                            View
-                            Post</button>
-                    </div>
+
+                    <img src="./img/profile4_post.webp" class="img-fluid" id="imgBlur2">
                     <div class="p-2">
                         <hr>
                         <div class="d-flex justify-content-between align-items-center">
@@ -723,8 +463,7 @@
                                 <button class="emotionSection"><i class="fa-solid fa-comment"></i> Comment</button>
                             </div>
                             <div class="col-4">
-                                <button class="emotionSection" data-bs-toggle="modal"
-                                    data-bs-target="#Profile3_ShareModal"><i class="fa-solid fa-share-from-square"></i>
+                                <button class="emotionSection"><i class="fa-solid fa-share-from-square"></i>
                                     Share</h6></button>
                             </div>
                         </nav>

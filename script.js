@@ -23,10 +23,19 @@ function removeBlur(id1, id2, id3){
   userDiv.style.display="none";
   img.style.filter="none";
 }
-
+counter=0
 function buttonText(id1){
   const btn = document.getElementById(id1);
-  console.log("here");
-  btn.innerHTML = `<span><i
+  if (count == 0) {
+    btn.style.color = "black"
+    btn.innerHTML = `<span><i
   class="fa-solid fa-thumbs-up"></i> Liked</span>`
+    count = 1;        
+}
+else {
+    btn.style.color = "white"
+    btn.innerHTML = `<span><i
+  class="fa-solid fa-thumbs-up"></i> Like</span>`
+    count = 0;
+}
 }
