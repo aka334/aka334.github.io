@@ -340,3 +340,10 @@ hr {
   text-align: center;
   width: 99%;
 }
+.dropdown-toggle::after {
+  width: 80px;
+  content: none;
+}
+.dropdown-menu {
+  min-width:215px;
+}

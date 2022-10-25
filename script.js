@@ -26,7 +26,7 @@ function removeBlur(id1, id2, id3){
 counter=0
 function buttonText(id1){
   const btn = document.getElementById(id1);
-  if (count == 0) {
+  if (counter == 0) {
     btn.style.color = "black"
     btn.innerHTML = `<span><i
   class="fa-solid fa-thumbs-up"></i> Liked</span>`
