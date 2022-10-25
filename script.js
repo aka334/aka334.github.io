@@ -14,6 +14,7 @@ function setColor(btn) {
       count = 0;
   }
 }
+import { Offcanvas } from 'bootstrap'
 
 function removeBlur(id1, id2, id3){
   const userDiv = document.getElementById(id1);
@@ -22,4 +23,11 @@ function removeBlur(id1, id2, id3){
   btn.style.display = "none"
   userDiv.style.display="none";
   img.style.filter="none";
+}
+
+function buttonText(id1){
+  const btn = document.getElementById(id1);
+  console.log("here");
+  btn.innerHTML = `<span><i
+  class="fa-solid fa-thumbs-up"></i> Liked</span>`
 }
