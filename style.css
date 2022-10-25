@@ -143,7 +143,9 @@ hr {
 
 .comment-section {
   text-align: center;
-  font-size: 15px;
+  /* font-size: 15px; */
+  font-family: inherit;
+  align-items: center;
 
 }
 
@@ -229,8 +231,12 @@ hr {
   max-width: 100%;
   width: 100%;
   background-color: #ffffff;
-  padding: 0px;
+  padding-left: 2px;
   font-size: 18px;
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  justify-content: center;
 }
 
 .imageContainer {
@@ -351,9 +357,11 @@ hr {
   left:100px
 }
 
-.test{
+ /* .test{
   /* bottom:100% !important; */
   /* right:0 !important; */
   /* z-index: 1 !important; */
-  margin-left: -110px !important;
-}
+  /* margin-left: -110px; */
+  /* position: absolute; */
+  /* right: 0; */
+ /* } */ 
