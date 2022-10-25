@@ -236,7 +236,7 @@ hr {
 .imageContainer {
   position: relative;
   text-align: center;
-  color: rgb(58, 53, 53);
+  /* color: rgb(58, 53, 53); */
   color: #fff;
 }
 
@@ -317,6 +317,7 @@ hr {
 }
 .tooltip-wrap:hover .tooltip-content{
   display: block;
+  z-index: 1;
 }
 .card-img, .card-img-bottom, .card-img-top {
   width: 100%;
