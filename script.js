@@ -14,7 +14,6 @@ function setColor(btn) {
       count = 0;
   }
 }
-import { Offcanvas } from 'bootstrap'
 
 function removeBlur(id1, id2, id3){
   const userDiv = document.getElementById(id1);
