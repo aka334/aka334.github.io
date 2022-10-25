@@ -249,7 +249,7 @@ hr {
 }
 
 .img-op {
-  filter: blur(3px);
+  filter: blur(5px);
 }
 
 .para-op {

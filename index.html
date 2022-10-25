@@ -109,7 +109,7 @@
     </div>
   </div>
   <!-- Independent Fact Check label -->
-  <div class="modal fade" id="UserFactModal" tabindex="-1" aria-labelledby="myModal" aria-hidden="true">
+  <div class="modal fade" id="UserFactModal1" tabindex="-1" aria-labelledby="myModal" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-body">
@@ -170,7 +170,7 @@
               <i class="fa-solid fa-circle-info"></i>
               <h6 style="font-size: 16px;"><b> Flagged as Misinformation</b></h6>
               <p class="para-op" style="font-size: 12px;">Checked by independent fact checker</p>
-              <button type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#UserFactModal">See
+              <button type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#UserFactModal1">See
                 Why? </button>
             </div>
           </div>
@@ -253,6 +253,41 @@
       </div>
     </div>
   </div>
+  <!-- Independent Fact Check label -->
+  <div class="modal fade" id="UserFactModal2" tabindex="-1" aria-labelledby="myModal" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-body">
+          <i class="fa-solid fa-circle-info"></i>
+          <div class="fact_para">Facebook determined your post has the same false information and added a
+            notice to this
+            post</div>
+          <i class="fa-brands fa-facebook"></i>
+          <div class="fact_para">People who repeatedly share false information might have their posts moved
+            lowe in News
+            Feed so other people are less likely to see them.</div>
+        </div>
+        <div class="modal-body">
+          <h6><b>From Independent Fact Checkers</b></h6>
+          <a href="https://iopscience.iop.org/article/10.1088/1748-9326/11/4/048002" target="_blank"
+            rel="noopener noreferrer" class="btn btn-primary button-Fact">See Fact Check</a>
+          <p class="para-center para-light">Fact checker is certified by the International Fact-Checking
+            Network.</p>
+        </div>
+        <div class="modal-body">
+          <h6><b>What You Can Do</b></h6>
+          <ul class="list-group">
+            <li class="list-group-item borderless" data-bs-dismiss="modal"> <button class="btn_high rounded-circle">
+                <i class="fa-solid fa-trash"></i>
+              </button>Delete Post</li>
+            <li class="list-group-item borderless" data-bs-dismiss="modal"> <button class="btn_high rounded-circle">
+                <i class="fa-solid fa-trash-can-arrow-up"></i>
+              </button>Don't Delete</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
   <div class="container mt-12 mb-12">
     <div class="row d-flex align-items-center justify-content-center">
       <div class="col-md-6 card-design">
@@ -293,15 +328,26 @@
             <button class="btn_card rounded-circle"><b>...</b>
             </button>
           </div>
-          <iframe
-            src="https://www.facebook.com/plugins/video.php?href=https://www.facebook.com/LetFreedomSpeak/videos/854579488082979/UzpfSTE1MDk0NjUzODA6MTAyMTc0NjM2NDU4NTIyNzM/&show_text=0&width=560"
-            width="max-width" height="367px" style="border:none;overflow:hidden; height: 500px;" scrolling="no"
-            frameborder="0" allowTransparency="true" allowFullScreen="true"></iframe>
+          <div class="container imageContainer" id="userPost">
+            <video width="100%" height="300" controls class="img-fluid img-op" id="imgBlur4">
+              <source src="./img/video1.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+            <div class="centered" id="userDiv4" style="color: white;">
+              <i class="fa-solid fa-circle-info"></i>
+              <h6 style="font-size: 16px;"><b> Flagged as Misinformation</b></h6>
+              <p class="para-op" style="font-size: 12px;">Checked by independent fact checker</p>
+              <button type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#UserFactModal2">See
+                Why? </button>
+            </div>
+          </div>
           <div id="blurButton4" style="text-align: center;">
-
-            <button type="button" class="btn btn-light" style="max-width: 100%;"><i class="fa-solid fa-eye-slash"></i>
+            <button type="button" class="btn btn-md btn-block"
+              onclick="removeBlur('userDiv4','imgBlur4','blurButton4')"><i class="fa-solid fa-eye-slash"></i>
               View
-              Post</button>
+              Video</button>
+
+
 
           </div>
           <!-- <img src="./img/sattire_img.jfif" class="img-fluid"> -->
@@ -376,6 +422,41 @@
       </div>
     </div>
   </div>
+  <!-- Independent Fact Check label -->
+  <div class="modal fade" id="UserFactModal3" tabindex="-1" aria-labelledby="myModal" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-body">
+          <i class="fa-solid fa-circle-info"></i>
+          <div class="fact_para">Facebook determined your post has the same false information and added a
+            notice to this
+            post</div>
+          <i class="fa-brands fa-facebook"></i>
+          <div class="fact_para">People who repeatedly share false information might have their posts moved
+            lowe in News
+            Feed so other people are less likely to see them.</div>
+        </div>
+        <div class="modal-body">
+          <h6><b>From Independent Fact Checkers</b></h6>
+          <a href="https://wattsupwiththat.wpcomstaging.com/2008/02/19/january-2008-4-sources-say-globally-cooler-in-the-past-12-months/"
+            target="_blank" rel="noopener noreferrer" class="btn btn-primary button-Fact">See Fact Check</a>
+          <p class="para-center para-light">Fact checker is certified by the International Fact-Checking
+            Network.</p>
+        </div>
+        <div class="modal-body">
+          <h6><b>What You Can Do</b></h6>
+          <ul class="list-group">
+            <li class="list-group-item borderless" data-bs-dismiss="modal"> <button class="btn_high rounded-circle">
+                <i class="fa-solid fa-trash"></i>
+              </button>Delete Post</li>
+            <li class="list-group-item borderless" data-bs-dismiss="modal"> <button class="btn_high rounded-circle">
+                <i class="fa-solid fa-trash-can-arrow-up"></i>
+              </button>Don't Delete</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
   <!-- ------------------------------Card--------------------------------------------------------------------- -->
   <div class="container mt-12 mb-12">
     <div class="row d-flex align-items-center justify-content-center">
@@ -416,7 +497,11 @@
             <button class="btn_card rounded-circle"><b>...</b>
             </button>
           </div>
-          <p class="text-justify status">4 sources say “globally cooler” in the past 12 months
+          <p class="text-justify status">4 sources say “globally cooler” in the past 12 months.<br>
+            <a href="https://wattsupwiththat.wpcomstaging.com/2008/02/19/january-2008-4-sources-say-globally-cooler-in-the-past-12-months/"
+              target="_blank" rel="noopener noreferrer">
+              https://wattsupwiththat.wpcomstaging.com
+            </a>
           </p>
           <div class="container imageContainer" id="userPost">
             <img src="./img/profile2_post.jpg" class="img-fluid img-op" id="imgBlur1">
@@ -424,7 +509,7 @@
               <i class="fa-solid fa-circle-info"></i>
               <h6 style="font-size: 16px;"><b> Flagged as Misinformation</b></h6>
               <p class="para-op" style="font-size: 12px;">Checked by independent fact checker</p>
-              <button type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#UserFactModal">See
+              <button type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#UserFactModal3">See
                 Why? </button>
             </div>
           </div>
@@ -659,6 +744,41 @@
       </div>
     </div>
   </div>
+  <!-- Independent Fact Check label -->
+  <div class="modal fade" id="UserFactModal4" tabindex="-1" aria-labelledby="myModal" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-body">
+          <i class="fa-solid fa-circle-info"></i>
+          <div class="fact_para">Facebook determined your post has the same false information and added a
+            notice to this
+            post</div>
+          <i class="fa-brands fa-facebook"></i>
+          <div class="fact_para">People who repeatedly share false information might have their posts moved
+            lowe in News
+            Feed so other people are less likely to see them.</div>
+        </div>
+        <div class="modal-body">
+          <h6><b>From Independent Fact Checkers</b></h6>
+          <a href="https://skepticalscience.com/global-warming-natural-cycle.htm" target="_blank"
+            rel="noopener noreferrer" class="btn btn-primary button-Fact">See Fact Check</a>
+          <p class="para-center para-light">Fact checker is certified by the International Fact-Checking
+            Network.</p>
+        </div>
+        <div class="modal-body">
+          <h6><b>What You Can Do</b></h6>
+          <ul class="list-group">
+            <li class="list-group-item borderless" data-bs-dismiss="modal"> <button class="btn_high rounded-circle">
+                <i class="fa-solid fa-trash"></i>
+              </button>Delete Post</li>
+            <li class="list-group-item borderless" data-bs-dismiss="modal"> <button class="btn_high rounded-circle">
+                <i class="fa-solid fa-trash-can-arrow-up"></i>
+              </button>Don't Delete</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
   <!-- ------------------------------Card--------------------------------------------------------------------- -->
   <div class="container mt-12 mb-12">
     <div class="row d-flex align-items-center justify-content-center">
@@ -701,7 +821,8 @@
           </div>
           <p class="text-justify status">Global Cooling is Here: Evidence for Predicting Global Cooling for the Next
             Three Decades
-            <a>
+            <a href="https://www.globalresearch.ca/global-cooling-is-here/10783" target="_blank"
+              rel="noopener noreferrer">
               https://www.globalresearch.ca/global-cooling-is-here/10783
             </a>
 
@@ -712,7 +833,7 @@
               <i class="fa-solid fa-circle-info"></i>
               <h6 style="font-size: 16px;"><b> Flagged as Misinformation</b></h6>
               <p class="para-op" style="font-size: 12px;">Checked by independent fact checker</p>
-              <button type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#UserFactModal">See
+              <button type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#UserFactModal4">See
                 Why? </button>
             </div>
           </div>
