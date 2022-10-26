@@ -4,13 +4,12 @@ function setColor(btn) {
   if (count == 0) {
       property.style.color = "blue"
       property.innerHTML = `<span><i
-      class="fa-solid fa-thumbs-up"></i> Liked</span>`
+      class="fa-solid fa-thumbs-up"></i> Like</span>`
       count = 1;        
   }
   else {
-      property.style.color = "black"
-      property.innerHTML = `<span><i
-      class="fa-solid fa-thumbs-up"></i> Like</span>`
+      property.style.color = ""
+      property.innerHTML = `<span><i style="background-image: url(&quot;https://static.xx.fbcdn.net/rsrc.php/v3/yK/r/H6IBF1RX3vl.png&quot;); background-position: 0px -251px; background-size: auto; width: 18px; height: 18px; background-repeat: no-repeat; display: inline-block;"></i>Like</span>`
       count = 0;
   }
 }
