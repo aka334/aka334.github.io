@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Facebook</title>
+    <link href="./fontawesome-free-6.2.0-web/css/fontawesome.css" rel="stylesheet" />
+    <link href="./fontawesome-free-6.2.0-web/css/brands.css" rel="stylesheet" />
+    <link href="./fontawesome-free-6.2.0-web/css/solid.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous" />
+    <link type="text/css" href="style.css" rel="stylesheet" />
+</head>
+
+<body>
+
+
+
+    <header>
+        <nav class="navbar navbar-light bg-light">
+            <a class="navbar-brand" href="#">
+                <img src="https://static.xx.fbcdn.net/rsrc.php/y8/r/dF5SId3UHWd.svg" width="150" alt="" />
+            </a>
+            <div class="my-lg-2">
+                <!-- Search Icon -->
+                <button class="btn_high rounded-circle">
+                    <i class="fa-sharp fa-solid fa-magnifying-glass"></i>
+                </button>
+                <!-- Messenger Icon -->
+                <button class="btn_high rounded-circle">
+                    <i class="fa-brands fa-facebook-messenger"></i>
+                </button>
+            </div>
+        </nav>
+        <!-- Image and text -->
+        <div class="input-group mb-3">
+            <!-- <div class="input-group-prepend"> -->
+            <img src="./img/user_profile.png" height="55px" width="55px">
+            <!-- </div> -->
+            <input type="text" class="form-control" placeholder="What on your mind?" />
+            <div class="album">
+                <i class="fa-solid fa-image"></i>
+            </div>
+        </div>
+        <nav class="navbar fixed-bottom navbar-light bg-light">
+            <div class="col-2">
+                <i class="fa-solid fa-house"></i>
+                <h6 class="bot-menu">Home</h6>
+            </div>
+            <div class="col-2">
+                <i class="fa-regular fa-tv"></i>
+                <h6 class="bot-menu">Watch</h6>
+            </div>
+            <div class="col-2">
+                <i class="fa-regular fa-heart"></i>
+                <h6 class="bot-menu">Dating</h6>
+            </div>
+            <div class="col-2">
+                <i class="fa-regular fa-calendar"></i>
+                <h6 class="bot-menu">Feeds</h6>
+            </div>
+            <div class="col-2">
+                <i class="fa-solid fa-bell"></i>
+                <h6 class="bot-menu">Notifications</h6>
+            </div>
+            <div class="col-2">
+                <i class="fa-regular fa-bars"></i>
+                <h6 class="bot-menu">Menu</h6>
+            </div>
+        </nav>
+    </header>
+    <!-- -------------------------------------------------------------------------------------------------------- -->
+    <!--                                                  User Post                                             -->
+    <!-- -------------------------------------------------------------------------------------------------------- -->
+    <!-- Like Interventional Label -->
+    <div class="modal fade" id="UserLikeModal" tabindex="-1" aria-labelledby="myModal" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <p class="likeclass"><i class="fa-solid fa-circle-info"></i></p>
+                    <h1 class="liketitle"><b>The page has repeatedly shared false information</b></h1>
+                    <p class="likebody">Independent Fact checker has said the information is false. <a
+                            href="https://youtu.be/quU3bG7lVfY" target="_blank" rel="noopener noreferrer">earn More</a>
+                    </p>
+                    <button class="likebutton1" data-bs-dismiss="modal">Go Back</button><br>
+
+                    <button class="likebutton2" data-bs-dismiss="modal">Follow Page
+                        Anyway</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Share Intervention Label -->
+    <div class="modal fade" id="UserShareModal" tabindex="-1" aria-labelledby="myModal" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <p class="likeclass"><i class="fa-solid fa-circle-info"></i></p>
+                    <h1 class="sharetitle"><b>You're about to share this article without opening it.</b></h1>
+                    <p class="sharebody">Sharing the article without reading them may mean missing key facts.
+                    </p>
+                    <button class="likebutton2" onclick="window.open('https://youtu.be/quU3bG7lVfY',' _blank')"
+                        rel="noopener noreferrer">Open Article
+                    </button><br>
+                    <button class="likebutton2" data-bs-dismiss="modal">Continue Sharing</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Independent Fact Check label -->
+    <div class="modal fade" id="UserFactModal1" tabindex="-1" aria-labelledby="myModal" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <i class="fa-solid fa-circle-info"></i>
+                    <div class="fact_para">Facebook determined your post has the same false information and added a
+                        notice to this
+                        post</div>
+                    <i class="fa-brands fa-facebook"></i>
+                    <div class="fact_para">People who repeatedly share false information might have their posts moved
+                        lowe in News
+                        Feed so other people are less likely to see them.</div>
+                </div>
+                <div class="modal-body">
+                    <h6><b>From Independent Fact Checkers</b></h6>
+                    <a href="https://www.youtube.com/watch?v=quU3bG7lVfY" target="_blank" rel="noopener noreferrer"
+                        class="btn btn-primary button-Fact">See Fact Check</a>
+                    <p class="para-center para-light">Fact checker is certified by the International Fact-Checking
+                        Network.</p>
+                </div>
+                <div class="modal-body">
+                    <h6><b>What You Can Do</b></h6>
+                    <ul class="list-group">
+                        <li class="list-group-item borderless" data-bs-dismiss="modal"> <button
+                                class="btn_high rounded-circle">
+                                <i class="fa-solid fa-trash"></i>
+                            </button>Delete Post</li>
+                        <li class="list-group-item borderless" data-bs-dismiss="modal"> <button
+                                class="btn_high rounded-circle">
+                                <i class="fa-solid fa-trash-can-arrow-up"></i>
+                            </button>Don't Delete</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container mt-12 mb-12">
+        <div class="row d-flex align-items-center justify-content-center">
+            <div class="col-md-6 card-design">
+                <div class="card">
+                    <div class="d-flex justify-content-between p-2 px-3">
+
+                        <div class="d-flex flex-row align-items-center"> <img src="./img/user_profile.png" width="50"
+                                class="rounded-circle">
+                            <div class="d-flex flex-column ml-2"> <span class="font-weight-bold">Your Account</span>
+                                <div href="#" class="text-bot">Thursday at 2:04pm</div>
+                            </div>
+                        </div>
+                        <button class="btn_card rounded-circle"><b>...</b>
+                        </button>
+                    </div>
+                    <p class="text-justify status">To label CO2 as a "pollutant" is a disservice to a gas that has
+                        played an
+                        enormous role in the development and sustainability of all life on this wonderful earth. Plants
+                        need it to
+                        survive and maintain natural order. Mother earth has clearly ruled that CO2 is not a pollutant!
+                    </p>
+                    <div class="container imageContainer" id="userPost">
+                        <img src="./img/user_post.jpg" class="img-fluid img-op" id="imgBlur">
+                        <div class="centered" id="userDiv">
+                            <i class="fa-solid fa-circle-info"></i>
+                            <h6 style="font-size: 16px;"><b> Flagged as Misinformation</b></h6>
+                            <p class="para-op" style="font-size: 12px;">Checked by independent fact checker</p>
+                            <button type="button" class="btn btn-light" data-bs-toggle="modal"
+                                data-bs-target="#UserFactModal1">See
+                                Why? </button>
+                        </div>
+                    </div>
+                    <div id="blurButton" style="text-align: center;">
+                        <button type="button" class="btn btn-md btn-block"
+                            onclick="removeBlur('userDiv','imgBlur','blurButton')"><i class="fa-solid fa-eye-slash"></i>
+                            View
+                            Post</button>
+
+
+                    </div>
+                    <div class="p-2">
+                        <hr>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="d-flex flex-row icons d-flex align-items-center">
+                                <i class="fa-solid fa-thumbs-up" style="color: blue; font-size: 18px;"></i>
+                                <i class="fa-brands fa-gratipay" style="color: red; font-size: 18px;"></i> &nbsp; John
+                                Doe and
+                                22 others
+                                <i class="fa fa-smile-o ml-2"></i>
+                            </div>
+                            <div class="d-flex flex-row muted-color"> <span>2 comments</span> </div>
+                        </div>
+                        <hr>
+                        <nav class="navbar comment-section">
+                            <div class="col-3">
+                                <button class="emotionSection" id="likebtn1" onclick="setColor('likebtn1')"><i
+                                        style="background-image: url(&quot;https://static.xx.fbcdn.net/rsrc.php/v3/yK/r/H6IBF1RX3vl.png&quot;); background-position: 0px -251px; background-size: auto; width: 18px; height: 18px; background-repeat: no-repeat; display: inline-block;"></i>
+                                    Like</button>
+                            </div>
+                            <div class="col-5">
+                                <button class="emotionSection"><i class="x1b0d499 x1d69dk1"
+                                        style="background-image: url(&quot;https://static.xx.fbcdn.net/rsrc.php/v3/yK/r/H6IBF1RX3vl.png&quot;); background-position: 0px -213px; background-size: auto; width: 18px; height: 18px; background-repeat: no-repeat; display: inline-block;"></i>Comment</button>
+                            </div>
+                            <div class="col-4">
+                                <button class="emotionSection" data-bs-toggle="modal"
+                                    data-bs-target="#UserShareModal"><i
+                                        style="background-image: url(&quot;https://static.xx.fbcdn.net/rsrc.php/v3/yK/r/H6IBF1RX3vl.png&quot;); background-position: 0px -270px; background-size: auto; width: 18px; height: 18px; background-repeat: no-repeat; display: inline-block;"></i>
+                                    Share</h6></button>
+                            </div>
+                        </nav>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+        integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>
