@@ -71,7 +71,7 @@
         </nav>
     </header>
     <!-- Like Interventional Label -->
-    <div class="modal fade" id="Profile2_LikeModal" tabindex="-1" aria-labelledby="myModal" aria-hidden="true">
+    <!-- <div class="modal fade" id="Profile2_LikeModal" tabindex="-1" aria-labelledby="myModal" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-body">
@@ -88,7 +88,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
     <!-- Share Intervention Label -->
     <div class="modal fade" id="Profile2_ShareModal" tabindex="-1" aria-labelledby="myModal" aria-hidden="true">
         <div class="modal-dialog">
@@ -169,8 +169,8 @@
                                                     </div>
                                                 </div>
                                                 <div class="hoverObject">
-                                                    <div href="#" class="btn btn-primary btn1a" data-bs-toggle="modal"
-                                                        data-bs-target="#Profile2_LikeModal">
+                                                    <div href="#" class="btn btn-primary btn1a" id="button3"
+                                                    onclick="buttonText('button3')" >
                                                         <i class="fa-solid fa-thumbs-up"></i> Like
                                                     </div>
                                                     <div href="#" class="btn btn-primary btn2a"><i
@@ -184,7 +184,25 @@
                                 </span>
                             </div>
                         </div>
-                        <button class="btn_card rounded-circle"><b>...</b>
+                        <div class="dropdown">
+                            <button class="btn btn dropdown-toggle" type="button" id="dropdownMenuButton"
+                                data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                <b>...</b>
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <a class="dropdown-item" href="#" onclick="return false;"> <i
+                                        data-visualcompletion="css-img" class="x1b0d499 xep6ejk"
+                                        style="background-image: url(&quot;https://static.xx.fbcdn.net/rsrc.php/v3/yI/r/o2eOVyPqsdP.png&quot;); background-position: 0px -241px; background-size: auto; width: 20px; height: 20px; background-repeat: no-repeat; display: inline-block;"></i>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;<b>Save Link
+                                    </b></a>
+                                <a class="dropdown-item" href="#" onclick="return false;"><img class="x1b0d499 xep6ejk"
+                                        src="https://static.xx.fbcdn.net/rsrc.php/v3/yK/r/l36ouVTLKY-.png" alt=""
+                                        height="20" width="20"></i>&nbsp;&nbsp;&nbsp;&nbsp;<b> Hide Post</b></a>
+                                <a class="dropdown-item" href="#" onclick="return false;">
+                                    <img src="https://static.xx.fbcdn.net/rsrc.php/v3/y4/r/ZzfJKx3t9Ej.png" alt=""
+                                        height="20" width="20">&nbsp;&nbsp;&nbsp;&nbsp; <b>Report Post</b></a>
+                            </div>
+                        </div>
                         </button>
                     </div>
                     <p class="text-justify status">4 sources say “globally cooler” in the past 12 months.<br>
