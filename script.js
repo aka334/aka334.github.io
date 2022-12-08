@@ -38,3 +38,17 @@ else {
     count = 0;
 }
 }
+function showComment(){
+  document.getElementById("textComment").style.display ="block";
+}
+
+var input = document.getElementById("textComment");
+
+input.addEventListener('keypress', function(event){
+  if (event.key ==="Enter"){
+    event.preventDefault();
+    document.getElementById("textComment").style.value ="";
+    document.getElementById("textComment").style.display ="none";
+    
+  }
+})

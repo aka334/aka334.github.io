@@ -356,4 +356,6 @@ hr {
 .share-menu{
   left:100px
 }
-
+#textComment{
+  display: none;
+}
